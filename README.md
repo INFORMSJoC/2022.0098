@@ -117,12 +117,12 @@ For other datasets, change the `feature_names` and load corresponding RData.
 To replicate the results in [Table 2](results/table2.png), it contains two parts: baselines and PIE performances.
 For baselines, please run [load_functions_Regression.R](scripts/baseline/load_functions_Regression.R) then [parkinson_baseline_code.R](scripts/baseline/parkinson_baseline_code.R) as an example for parkinson dataset. For the rest of the dataset, simply modify the data loading part. For PIE model evaluation, originally, we trained on HPC with parallel computing to fasten the speed. With your local machine, a grid search for parameters can be explored. Code for HPC and HPC setting are uploaded in [scripts/PIE_performance]. Sparsity PIE in [Table 3](results/table2.png) just add additional condition - sparsity_count features less than 8 when selecting models.
 
-*load_functions.R* contains sourse code for PIE model, e.g. fitting and predict.<br>
-*parkinsons_load.R* process the parkinson dataset for PIE model to use.<br>
-*parallelCV.R* contains code to fit PIE model and predict with PIE model for different parameters based on  passing on arguments.<br>
-*parallelFinal.R* contains final process code to gather all parallel running PIE model performances and pick the best five model for each fold based on the validation performance (note, although we generate the evaluate for test as well, we only use validation performance for parameter tuning.)<br>
-*parallelFinal_sparsity.R* similar file to parallelFinal.R, the only difference is the selection condition limite the sparsity features less or equal to 8.<br>
-*parkinsons.sh* contains the command for HPC to run in parallel.<br>
+*[load_functions.R](script/PIE_performance/load_functions.R)* contains sourse code for PIE model, e.g. fitting and predict.<br>
+*[parkinsons_load.R](script/PIE_performance/parkinsons_load.R)* process the parkinson dataset for PIE model to use.<br>
+*[parallelCV.R](script/PIE_performance/parallelCV.R)* contains code to fit PIE model and predict with PIE model for different parameters based on  passing on arguments.<br>
+*[parallelFinal.R](script/PIE_performance/parallelFinal.R)* contains final process code to gather all parallel running PIE model performances and pick the best five model for each fold based on the validation performance (note, although we generate the evaluate for test as well, we only use validation performance for parameter tuning.)<br>
+*[parallelFinal_sparsity.R](script/PIE_performance/parallelFinal_sparsity.R)* similar file to parallelFinal.R, the only difference is the selection condition limite the sparsity features less or equal to 8.<br>
+*[parkinsons.sh](script/PIE_performance/parkinsons.sh)* contains the command for HPC to run in parallel.<br>
 
 **Please note that if you starts from data processing, results might be slightly different from our results due to the randomness of 5 fold cross validation split**
 
