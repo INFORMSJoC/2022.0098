@@ -1,6 +1,6 @@
 # Winequality
 
-Winequality data is publicly available on [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/dataset/186/wine+quality). This dataset is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) (CC BY 4.0) license.
+Winequality data is publicly available on [UC Irvine Machine Learning Repository - Wine Quality](https://archive.ics.uci.edu/dataset/186/wine+quality). This dataset is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) (CC BY 4.0) license.
 
 Below is the BibTex for citing this dataset.
 ```
