@@ -1,17 +1,11 @@
 ![INFORMS Journal on Computing Logo](https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg)
 
-# PIE
+# PIE -- A Partially Interpretable Model with Black-box Refinement
 
 This project is distributed in association with the [INFORMS Journal on
-Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
+Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE.txt).
 
 The software and data in this repository are associated with the paper [PIE -- A Partially Interpretable Model with Black-box Refinement](https://doi.org/10.1287/ijoc.2022.0098) by T. Wang, J. Yang, Y. Li, and B. Wang. 
-
-## Version
-
-The version used in the paper is
-
-[![Release](https://img.shields.io/github/v/release/INFORMSJoC/Template?sort=semver)](https://github.com/INFORMSJoC/Template/releases)
 
 ## Cite
 
@@ -21,9 +15,23 @@ https://doi.org/10.1287/ijoc.2022.0098
 
 https://doi.org/10.1287/ijoc.2022.0098.cd
 
+Below is the BibTex for citing this snapshot of the repository.
+
+```
+@misc{,
+  author =        {T. Wang, J. Yang, Y. Li, and B. Wang},
+  publisher =     {INFORMS Journal on Computing},
+  title =         {{PIE -- A Partially Interpretable Model with Black-box Refinement}},
+  year =          {2024},
+  doi =           {10.1287/ijoc.2022.0098.cd},
+  url =           {https://github.com/INFORMSJoC/2022.0098},
+  note =          {Available for download at https://github.com/INFORMSJoC/2022.0098},
+}  
+```
+
 ## Description
 
-This repository implements a novel Partially Interpretable Model (PIE) framework introduced by Wang et al. <arxiv:2105.02410>. This framework jointly train an interpretable model and a black-box model to achieve high predictive performance as well as partial model transparency.
+This repository implements a novel Partially Interpretable Model (PIE) framework introduced by Wang et al. (arxiv:2105.02410). This framework jointly train an interpretable model and a black-box model to achieve high predictive performance as well as partial model transparency.
 
 ## Demo with Winequality Dataset
 
