@@ -1,6 +1,6 @@
 # Parkinsons
 
-Parkinsons data is publicly available on [UC Irvine Machine Learning Repository - Parkinsons Telemonitoring]([https://archive.ics.uci.edu/dataset/186/wine+quality](https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring)). This dataset is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) (CC BY 4.0) license.
+Parkinsons data is publicly available on [UC Irvine Machine Learning Repository - Parkinsons Telemonitoring](https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring). This dataset is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) (CC BY 4.0) license.
 
 Below is the BibTex for citing this dataset.
 ```
