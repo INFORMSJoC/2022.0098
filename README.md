@@ -18,11 +18,11 @@ https://doi.org/10.1287/ijoc.2022.0098.cd
 Below is the BibTex for citing this snapshot of the repository.
 
 ```
-@misc{,
+@misc{Wang2025,
   author =        {T. Wang, J. Yang, Y. Li, and B. Wang},
   publisher =     {INFORMS Journal on Computing},
   title =         {{PIE -- A Partially Interpretable Model with Black-box Refinement}},
-  year =          {2024},
+  year =          {2025},
   doi =           {10.1287/ijoc.2022.0098.cd},
   url =           {https://github.com/INFORMSJoC/2022.0098},
   note =          {Available for download at https://github.com/INFORMSJoC/2022.0098},
@@ -31,7 +31,7 @@ Below is the BibTex for citing this snapshot of the repository.
 
 ## Description
 
-This repository implements a novel Partially Interpretable Model (PIE) framework introduced by Wang et al. (arxiv:2105.02410). This framework jointly train an interpretable model and a black-box model to achieve high predictive performance as well as partial model transparency.
+This repository implements a novel Partially Interpretable Model (PIE) framework introduced by Wang et al. [arxiv:2105.02410](https://arxiv.org/abs/2105.02410). This framework jointly train an interpretable model and a black-box model to achieve high predictive performance as well as partial model transparency.
 
 ## Demo with Winequality Dataset
 
@@ -95,11 +95,8 @@ sparsity_count(fit$Betas, dat$lasso_group)
 ```
 
 ## Data
-All data used in this paper is publicly available.
 
-For example, the dataset `winequality` is Wine Quality Data Set introduced in Cortez et al. (2009). The link to the dataset is \url{https://archive.ics.uci.edu/ml/datasets/Wine+Quality}. 
-
-The original link to the rest of datasets used in this paper are explained in appendix.
+All data used in this paper are publicly available. Each directory in `data` contains a README explaining where the data were obtained from.
 
 ## Results
 
@@ -111,7 +108,6 @@ Figure 2(a)(b) in the paper shows the prediction breakdown for parkinsons data.
 Table 2 and 3 in the paper shows the comparable performance of PIE.
 ![Table 2](results/table2.png)
 ![Table 3](results/table3.png)
-
 
 ## Replicating
 
@@ -132,7 +128,7 @@ For baselines, please run [load_functions_Regression.R](scripts/baseline/load_fu
 *[parallelFinal_sparsity.R](scripts/PIE_performance/parallelFinal_sparsity.R)* similar file to parallelFinal.R, the only difference is the selection condition limite the sparsity features less or equal to 8.<br>
 *[parkinsons.sh](scripts/PIE_performance/parkinsons.sh)* contains the command for HPC to run in parallel.<br>
 
-**Please note that if you starts from data processing, results might be slightly different from our results due to the randomness of 5 fold cross validation split**
+**Please note that if you start from data processing, the results might be slightly different from our results due to the randomness of the 5-fold cross validation split**
 
 ## Ongoing Development
 
